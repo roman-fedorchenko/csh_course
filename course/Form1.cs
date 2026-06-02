@@ -6,9 +6,9 @@ namespace course
 {
     struct SPoint
     {
-        public double x; // вхідний x
-        public double y; // результат функції f(x)
-        public double q; // випадкова величина
+        public double x { get; set; } // вхідний x
+        public double y { get; set; } // результат функції f(x)
+        public double q { get; set; } // випадкова величина
 
         public SPoint(double x, double y, double q)
         {
@@ -16,7 +16,7 @@ namespace course
             this.y = y;
             this.q = q;
         }
-        public string Stringify()
+        public override string ToString()
         {
             return $"x: {x:F2}, y: {y:F4}, q: {q:F4}";
         }
@@ -36,7 +36,7 @@ namespace course
         }
         public double f2(double x, double a, double q)
         {
-            return q / (Math.Log10(a - x));
+            return q / (Math.Log(a - x));
         }
 
         // Метод для отримання випадкового числа з мікрофона
@@ -146,7 +146,7 @@ namespace course
                     {
                         F1List.Add(new SPoint(x, f1(x, q), q));
                         F1counter++;
-                        F1listBox.Items.Add(F1List.Last().Stringify());
+                        F1listBox.Items.Add(F1List.Last());
                     }
                     else
                     {
@@ -167,7 +167,7 @@ namespace course
                     {
                         F2List.Add(new SPoint(x, f2(x, a, q), q));
                         F2counter++;
-                        F2listBox.Items.Add(F2List.Last().Stringify());
+                        F2listBox.Items.Add(F2List.Last());
                     }
                 }
             }

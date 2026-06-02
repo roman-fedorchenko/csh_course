@@ -63,3 +63,4 @@ C:\Users\dgbzz\source\repos\course\course\bin\Debug\net9.0-windows\OpenTK.GLCont
 C:\Users\dgbzz\source\repos\course\course\bin\Debug\net9.0-windows\ScottPlot.WinForms.dll
 C:\Users\dgbzz\source\repos\course\course\bin\Debug\net9.0-windows\SkiaSharp.Views.Desktop.Common.dll
 C:\Users\dgbzz\source\repos\course\course\bin\Debug\net9.0-windows\SkiaSharp.Views.WindowsForms.dll
+C:\Users\dgbzz\source\repos\course\course\obj\Debug\net9.0-windows\course.sourcelink.json
