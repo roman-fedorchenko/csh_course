@@ -1,2 +1,5 @@
-.vs
-course/bin
+# Налаштування Visual Studio
+.vs/
+
+# Результати компіляції проекту course
+course/bin/
